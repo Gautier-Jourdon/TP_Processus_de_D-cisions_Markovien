@@ -1,0 +1,10 @@
+Caractéristiques du MDP :
+— taille du plateau de jeu (n×m avec n lignes et m colonnes),
+— position de départ du robot (couple (x0,y0) = (1,1)),
+— valeur de la récompense dans chaque état s = (x,y) avec x ∈ {1,2,...,n} et y ∈ {1,2,3,...,m},
+— probabilités de transition pour chaque action et couple d’états, i.e. P(s|s,a), en supposant une erreur.
+    Pour chaque action demandée, il y a une probabilité de 0.2 que le robot fasse une autre action
+    (déplacement) avec un angle de 90 degrés. Cette probabilité de déviation de l’action demandée est
+    répartie entre les actions possibles avec un angle de 90 degrés.
+— paramètre d’escompte γ ∈ [0,1].
+— larécompense dans chaque état est nulle sauf pour l’état (2,4) (resp. (3,4)) qui est de −1 (resp. +1).
